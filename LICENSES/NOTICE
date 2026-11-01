@@ -1,0 +1,13 @@
+Traliran AI Box
+
+The Traliran AI Box application is licensed under the GNU Affero General Public
+License version 3, or (at your option) any later version. You should have received
+a copy of the GNU Affero General Public License along with this program. If not, see
+<https://www.gnu.org/licenses/>.
+
+This distribution bundles third-party open-source components that are licensed
+under the MIT License, including the Stable Diffusion backend libraries (such as
+stable-diffusion.cpp). Those components remain under their original MIT License
+terms and are provided alongside this application.
+
+Model weights are subject to their respective creators' licenses.

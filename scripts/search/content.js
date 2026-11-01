@@ -4,7 +4,7 @@ const dns = require("dns").promises;
 const net = require("net");
 const zlib = require("zlib");
 
-const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LocalAIStudio/1.0";
+const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) TraliranAIBox/1.0";
 
 function decodeHtml(value) {
   return String(value || "")

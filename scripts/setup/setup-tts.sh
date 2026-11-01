@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Local AI Studio - Kokoro TTS setup for Linux/macOS
+# Traliran AI Box - Kokoro TTS setup for Linux/macOS
 #
 
 set -euo pipefail

@@ -12,7 +12,7 @@ PYTHON_BIN="$VENV_DIR/bin/python"
 
 echo ""
 echo "  ============================================================"
-echo "   Uncensored AI Studio - Linux OpenVINO NPU Setup"
+echo "   Traliran AI Box - Linux OpenVINO NPU Setup"
 echo "  ============================================================"
 echo ""
 

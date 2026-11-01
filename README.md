@@ -1,20 +1,20 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/branding/logo/mark-on-dark.svg" />
-    <img src="assets/branding/logo/mark.svg" alt="Portable AI Studio logo" width="120" height="120" />
+    <img src="assets/branding/logo/mark.svg" alt="Traliran AI Box logo" width="120" height="120" />
   </picture>
 </p>
 
-<h1 align="center">Portable AI Studio</h1>
+<h1 align="center">Traliran AI Box</h1>
 
 <p align="center">
-  <strong>A premium, zero-configuration local AI studio and offline GUI for Stable Diffusion (Image Generation), LLMs (Chat), Whisper (Speech-to-Text), and Kokoro (Text-to-Speech). Powered by hardware-accelerated GPU and NPU execution on Windows, Linux, and macOS.</strong>
+  <strong>A premium, zero-configuration local AI box and offline GUI for Stable Diffusion (Image Generation), LLMs (Chat), Whisper (Speech-to-Text), and Kokoro (Text-to-Speech). Powered by hardware-accelerated GPU and NPU execution on Windows, Linux, and macOS.</strong>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Offline-100%25-green?style=for-the-badge&logo=offline" alt="100% Offline" />
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-blue?style=for-the-badge" alt="Platforms" />
-  <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge" alt="License" />
+  <img src="https://img.shields.io/badge/License-AGPLv3-blue?style=for-the-badge" alt="License" />
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 <p align="center">
   <a href="https://youtu.be/yeFvP3SWMak">
-    <img src="https://img.youtube.com/vi/yeFvP3SWMak/maxresdefault.jpg" alt="Uncensored AI Studio Video Tutorial" width="800" style="border-radius: 8px;" />
+    <img src="https://img.youtube.com/vi/yeFvP3SWMak/maxresdefault.jpg" alt="Traliran AI Box Video Tutorial" width="800" style="border-radius: 8px;" />
   </a>
 </p>
 
@@ -65,7 +65,7 @@
 
 ## 📖 Table of Contents
 * [Screenshots](#screenshots)
-* [What is Portable AI Studio?](#what-is-uncensored-ai-studio)
+* [What is Traliran AI Box?](#what-is-traliran-ai-box)
 * [Key Features](#key-features)
 * [Workspace & Engine Architecture](#workspace-architecture)
 * [Supported Models](#supported-models)
@@ -81,9 +81,9 @@
 
 ---
 
-## <a id="what-is-uncensored-ai-studio"></a>📖 What is Portable AI Studio?
+## <a id="what-is-traliran-ai-box"></a>📖 What is Traliran AI Box?
 
-**Portable AI Studio** is a completely offline, zero-setup, self-contained AI studio for Windows, Linux, and macOS. Unlike cloud-based AI systems, it runs entirely on your own hardware with no censorship, tracking, subscriptions, or login requirements.
+**Traliran AI Box** is a completely offline, zero-setup, self-contained AI box for Windows, Linux, and macOS. Unlike cloud-based AI systems, it runs entirely on your own hardware with no censorship, tracking, subscriptions, or login requirements.
 
 It unifies four major local AI capabilities into one high-performance desktop interface:
 1. **🎨 Image Generation (Stable Diffusion):** Generate and edit high-quality images offline using `.safetensors`, `.gguf`, or `.ckpt` model weights.
@@ -158,11 +158,11 @@ Known-good image models available from the Model Manager:
 ## <a id="folder-architecture"></a>📁 Folder Architecture
 
 ```
-Portable-AI-Studio/
+Traliran-AI-Box/
 ├── windows.bat                # Windows Launcher (Double-click entrypoint)
 ├── linux.sh                   # Linux Launcher (Terminal entrypoint)
 ├── mac.sh                     # macOS Launcher (Terminal entrypoint)
-├── LICENSE                    # MIT Open Source License
+├── LICENSE                    # GNU AGPLv3 (Affero General Public License)
 ├── .gitignore                 # Excludes models and output images from version control
 ├── README.md                  # Detailed system documentation
 ├── scripts/
@@ -351,7 +351,7 @@ cmake .. -DSD_METAL=ON -DSD_BUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Release
 cmake --build . --config Release -j$(getconf _NPROCESSORS_ONLN 2>/dev/null || sysctl -n hw.ncpu)
 
 # 4. Copy the binaries into this project
-cp bin/sd* /path/to/Portable-AI-Studio/app/backend/linux/<backend>/
+cp bin/sd* /path/to/Traliran-AI-Box/app/backend/linux/<backend>/
 ```
 
 After copying, rename the server binary to match what `scripts/server/serve.cjs` expects:
@@ -364,4 +364,4 @@ Then restart the app with `./linux.sh` (Linux) or `./mac.sh` (macOS).
 
 ## <a id="licensing"></a>📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file. Bundles [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) (MIT License). Model weights are subject to their respective creators' licenses.
+This project is licensed under the GNU Affero General Public License v3 - see the [LICENSE](LICENSES/LICENSE) file. Bundles [stable-diffusion.cpp](https://github.com/leejet/stable-diffusion.cpp) (MIT License). Model weights are subject to their respective creators' licenses. See the [NOTICE](LICENSES/NOTICE) file for bundled third-party components.
