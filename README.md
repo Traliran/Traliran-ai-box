@@ -17,15 +17,9 @@
   <img src="https://img.shields.io/badge/License-AGPLv3-blue?style=for-the-badge" alt="License" />
 </p>
 
-<p align="center">
-  🎥 <strong>Watch the Setup & Demo Video:</strong> <a href="https://youtu.be/yeFvP3SWMak">https://youtu.be/yeFvP3SWMak</a>
-</p>
+> This repository is a fork of [techjarves/Portable-Local-Studio](https://github.com/techjarves/Portable-Local-Studio). The plan is to replace the default user interface with the more functional and lightweight [Traliran AI Hub](https://traliran.github.io/t-ai-h/) to expand the system's capabilities. Traliran AI Hub will be adapted for integration with the backend; a database linked to the standard backend will also be added (this feature can be disabled—essentially, it means enabling "cloud synchronization" endpoints by default).
 
-<p align="center">
-  <a href="https://youtu.be/yeFvP3SWMak">
-    <img src="https://img.youtube.com/vi/yeFvP3SWMak/maxresdefault.jpg" alt="Traliran AI Box Video Tutorial" width="800" style="border-radius: 8px;" />
-  </a>
-</p>
+Important note: any features where the default interface outperforms Traliran AI Hub will remain unchanged.
 
 ---
 
